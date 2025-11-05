@@ -1,0 +1,33 @@
+{
+  "name": "serverapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  "server": "nodemon serverapi/server.js",
+  "client": "npm run dev --prefix clientui",
+  "app": "concurrently \"npm run server\" \"npm run client\""
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "bcryptjs": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "geolocation": "^0.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.0",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.0.9",
+    "nodemailer": "^6.10.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
